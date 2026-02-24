@@ -1,0 +1,22 @@
+import time
+class ucan:
+    def __init__(self,ucak_tipi):
+     self.ucak_tip=ucak_tipi
+     self.konumz=(0)
+    def havalan(self):
+        if self.konum()==(0,0,0):
+         print(self.ucak_tip+'yerden havalandı')
+
+        elif self.konumz<1000:
+         print(self.ucak_tip+'yükseliyor')
+        else:
+            print(self.ucak_tip+'irtifada')
+        pass
+    def konum(self):
+        if self.konumz==0:
+         print(self.ucak_tip + 'yerde')
+        elif self.konumz>1000:
+         print(self.ucak_tip + 'irtifada')
+        else:
+         print(self.ucak_tip + 'yükseliyor')
+        self.konumz += 100
